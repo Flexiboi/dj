@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Musicapp</title>
+</head>
+<body>
+    <div id="container">
+        <div id="appbar">
+            <div class="btn" id="trash-btn"></div>
+            <div class="btn" id="musicapp-btn" data-btn="musicapp"></div>
+            <div class="btn" id="djapp-btn" data-btn="djapp"></div>
+        </div>
+        <div id="startbar"></div>
+        <div id="appscreen">
+            <div id="musicapp" class="app" style="display: none;">
+                <div id="input">
+                    <form action="#" method="post">
+                            <div>
+                                <label for="url">URL</label><br>
+                                <input type="text" id="url" name="url" required>
+                            </div>
+                        <br>
+                            <div>
+                                <label for="title">TITLE</label><br>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                        <br>
+                            <div>
+                                <label for="artist">ARTIST</label><br>
+                                <input type="text" id="artist" name="artist" required>
+                            </div>
+                        <br>
+                            <div>
+                                <label for="genre">GENRE</label><br>
+                                <input type="text" id="genre" name="genre" required>
+                            </div>
+                        <br>
+                            <div>
+                                <label for="bpm">BPM</label><br>
+                                <input type="number" id="bpm" name="bpm" min="0">
+                            </div>
+                        <br>
+                            <div>
+                                <label for="length">TIME</label><br>
+                                <input type="text" id="length" name="length" placeholder="e.g. 03:45">
+                            </div>
+                        <br>
+                            <button type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="header">
+                    <span><p>File</p></span>
+                    <span><p>Window</p></span>
+                    <span><p>Help</p></span>
+                    <div class="closeapp"><p>◳</p></div>
+                    <div class="closeapp"><p>-</p></div>
+                    <div class="closeapp"><p>x</p></div>
+                </div>
+                <div id="audiowave">
+                    <div id="time">00:00:00:00</div>
+                    <div id="title">NO SONG SELECTED</div>
+                    <div id="audio-controls">
+                        <div id="controls">
+                            <div class="control que"><p>QUE</p></div>
+                            <div class="control pause"><p>⏸</p></div>
+                            <div class="control play"><p>⏵</p></div>
+                            <div class="control next"><p>⏭</p></div>
+                        </div>
+                        <div id="control-queues">
+                            <div class="control"><p>A</p></div>
+                            <div class="control"><p>B</p></div>
+                            <div class="control"><p>C</p></div>
+                            <div class="control"><p>D</p></div>
+                            <div class="control"><p>E</p></div>
+                            <div class="control"><p>F</p></div>
+                            <div style="padding-left: 10px; padding-right: 10px; font-weight: bold; font-size: 3vh; margin-bottom: 4px;"><p style="color: rgba(26, 24, 24, 0.554);">|</p></div>
+                            <div class="control"><p>⏴</p></div>
+                            <div class="control"><p>4</p></div>
+                            <div class="control"><p>⏵</p></div>
+                            <div class="control"><p>x</p></div>
+                        </div>
+                        <div id="control-list">
+                            <div class="control"><p>≣</p></div>
+                            <div class="control" style="width: 100px;"><p>MEMORY</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="explorer">
+                </div>
+                <div id="musiclist">
+                    <div id="header">
+                        <span class="title">TITLE</span>
+                        <span class="artist">ARTIST</span>
+                        <span class="genre">GENRE</span>
+                        <span class="bpm">BPM</span>
+                        <span class="length">TIME</span>
+                        <span class="dateadded">DATE ADDED</span>
+                    </div>
+                    <div id="songlist">
+                        <div class="addsong"><span>+</span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="djapp" class="app" style="display: none;">
+                <div class="header">
+                    <span><p>File</p></span>
+                    <span><p>Window</p></span>
+                    <span><p>Help</p></span>
+                    <div class="closeapp"><p>◳</p></div>
+                    <div class="closeapp"><p>-</p></div>
+                    <div class="closeapp"><p>x</p></div>
+                </div>
+                <div id="audiowave1">
+                    <div id="time">00:00:00:00</div>
+                    <div id="title">NO SONG SELECTED</div>
+                </div>
+                <div id="audiowave2">
+                    <div id="time">00:00:00:00</div>
+                    <div id="title">NO SONG SELECTED</div>
+                </div>
+                <div class="explorer" id="explorer1">
+                    <div class="song">
+                        <span class="loadSongs" style="text-align: center; margin-left: 200px;">🗘</span>
+                    </div>
+                </div>
+                <div class="explorer" id="explorer2">
+                    <div class="song">
+                        <span class="loadSongs" style="text-align: center; margin-left: 200px;">🗘</span>
+                    </div>
+                </div>
+                <div id="controls">
+                    <div class="queue-btn" id="queue1">QUE</div>
+                    <div class="queue-btn" id="queue2">QUE</div>
+                    <div class="queue-btn" id="play-pause1">⏯</div>
+                    <div class="queue-btn" id="play-pause2">⏯</div>
+                    <div class="queue-btn" id="solo-btn1">SOLO</div>
+                    <div class="queue-btn" id="solo-btn2">SOLO</div>
+                    <input type="range" orient="vertical" min = "0" max="100" value="0" name = "volumeslider1" id="volumeslider1" class="volumeslider">
+                    <input type="range" orient="vertical" min = "0" max="100" value="0" name = "volumeslider2" id="volumeslider2" class="volumeslider">
+                    <div id="extra-btns">
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <div class="time-btn"></div>
+                        <input type="range" min = "0" max="100" value="50" name = "bpmslider1" id="bpmslider1" class="bpmslider">
+                        <input type="range" min = "0" max="100" value="50" name = "bpmslider2" id="bpmslider2" class="bpmslider">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="taskbar">
+            <div class="btn" id="start-btn" data-btn="start"></div>
+            <div class="btn" id="musicapp-btn" data-btn="musicapp"></div>
+            <div class="btn" id="djapp-btn" data-btn="djapp"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

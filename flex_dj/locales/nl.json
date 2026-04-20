@@ -1,0 +1,76 @@
+{
+   "gizmo": {
+      "current_mode": "Modus: %s | %s",
+      "relative": "Relatief",
+      "world": "Wereld",
+      "coords": "Coords: %s",
+      "rotation": "Rotatie: %s",
+      "enable_cursor": "Muis Aan",
+      "disable_cursor": "Muis Uit",
+      "translate_mode": "Beweeg Modus",
+      "rotate_mode": "Rotatie Modus",
+      "toggle_space": "Relatief/Wereld",
+      "snap_to_ground": "Op Grond Zetten",
+      "done_editing": "Klaar",
+      "select_gizmo_description": "Selecteer de huidige opgelichte gizmo",
+      "translation_mode_description": "Verplaatsen",
+      "rotation_mode_description": "Draaien",
+      "toggle_space_description": "Wisselen tussen wereld of entiteit",
+      "close_gizmo_description": "Sluit Gizmo",
+      "snap_to_ground_description": "Op Grond Zetten"
+   },
+   "menu": {
+      "create": {
+         "setup_speaker": "Niewue Plaatsen",
+         "select_model": "Selecteer Model"
+      },
+      "delete": {
+         "title": "Welke wil je verwijderen?",
+         "coords": "%s",
+         "sub_title": "Wat wil je doen?",
+         "teleport": "Teleporteren",
+         "delete": "Verwijderen"
+      },
+      "radio": {
+         "selectchannel": "Welke zender gaan we luisteren?",
+         "channel": "Zender",
+         "radiovolume": "Radiovolume",
+         "volume": "Volume"
+      },
+      "distance": "Gehoorafstand (Huidig %s)",
+      "disablefilters": "Zet alle filters uit (Interieur / auto)",
+      "type": {
+         "stereo": "Stereo",
+         "3d": "3D Space"
+      },
+      "mp3": {
+         "title": "MP3 Speler",
+         "resume": "Nummer Hervatten",
+         "pause": "Nummer Pauzeren",
+         "stop": "Nummer Stoppen",
+         "change_song": "Liedje kiezen",
+         "volume": "Volume"
+      }
+   },
+   "target": {
+      "play_radio": "Radio Aanzetten",
+      "stop_radio": "Radio Afzettzen",
+      "volume_radio": "Radiovolume",
+      "use_computer": "Gebruiken",
+      "insert_usb": "USB-Poort",
+      "usemic": "Microfoon nemen"
+   },
+   "error": {
+      "exploit_kick": "Ela da mag ni..."
+   },
+   "success": {
+   },
+   "progress": {
+   },
+   "info": {
+      "mic_on": "Microfofoon genomen",
+      "mic_off": "Microfofoon weg gelegd"
+   },
+   "discord": {
+   }
+}
