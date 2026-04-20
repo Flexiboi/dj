@@ -1,6 +1,9 @@
 <img width="690" height="418" alt="image" src="https://github.com/user-attachments/assets/382c52df-f6e3-46b8-a8e2-7ef32cadc854" />
 NOT TESTED ON LIVE SERVER
 </br>
+
+**WILL NOT FINISH IT**
+</br>
 </br>
 
 **FEATURES**
